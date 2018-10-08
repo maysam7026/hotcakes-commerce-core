@@ -1,0 +1,453 @@
+/* Mega Menu Styles */
+ul.dnnmega {
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+
+
+ul.dnnmega ul {
+    padding: 5px 0;
+	margin:0;
+}
+
+/*WAM - removed z-index*/
+.dnnmega .breadcrumb { background:none;}
+ul.dnnmega li{float:left;list-style:none;position: relative;}
+
+ul.dnnmega li.root {
+    float: left;
+    list-style-type: none;
+    position: relative;
+    margin: 0;
+    padding: 0px;
+}
+
+ul.dnnmega li.root span{
+  padding:12px 20px;
+  display: block;
+}
+ul.dnnmega li.mmHasChild a span:after {
+  content: "\f0d7";
+  font-family: FontAwesome;
+  padding: 0 0 0 7px;
+  font-size: 12px;
+  font-weight: normal;
+}
+ul.dnnmega li.mmHasChild li a span:after { content:"";}
+
+ul.dnnmega li.root>span{color:White;}
+
+ul.dnnmega li.root a{
+    display: block;
+    color: #FFF;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: open sans;
+    margin: 0px;
+    border-top: 4px solid transparent;
+}
+ul.dnnmega li.root a:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+    border-top: 4px solid #0ec6cc;
+}
+
+
+ul.dnnmega li.mmItemHover a { 
+    background-color: rgba(255, 255, 255, 0.06);
+    border-top: 4px solid #0ec6cc;
+}
+ul.dnnmega li.mmItemHover a:hover{ position:relative;z-index:1230; }
+
+ul.dnnmega li a {display:inline-block;}
+
+ul.dnnmega li:hover a, ul.dnnmega li a:hover { background-position: left bottom; }
+
+ul.dnnmega li .megaborder {
+    position: absolute;
+    left: -150px;
+    z-index: 1200;
+    float: left;
+    display: none;
+    background: #FFF none repeat scroll 0% 0%;
+    text-align: left;
+    min-height: 180px;
+    box-shadow: 0px 0px 1px #ccc;
+    border-bottom: 2px solid #0ec6cc;
+}
+
+ul.dnnmega li.mmLast .megaborder {
+    right: 0px;
+    left: inherit;
+}
+ul.dnnmega li.mmFirst .megaborder {
+    right:inherit;
+    left: 0;
+}
+ul.dnnmega li.child-2 .megaborder {
+    right:inherit;
+    left: 0;
+}
+ul.dnnmega li:nth-last-child(2) .megaborder {
+    right: -100px;
+    left: inherit;
+}
+ul.dnnmega li:nth-last-child(3) .megaborder {
+    right: -150px;
+    left: inherit;
+}
+
+ul.dnnmega .megaborder .M {
+    display: block;
+    border-top: 0px none;
+    border-bottom: 0px none;
+    min-height: 135px;
+    padding: 10px 0 20px 10px;
+	margin:0;
+}
+
+
+/*--Sub nav heading style--*/
+ul.dnnmega .megaborder ul li.mmLast{background:none;}
+ul.dnnmega .megaborder ul li.mmRightColumn{background:none;}
+
+
+ul.dnnmega li.category {display:block;width:180px;float:left;}
+ul.dnnmega li.category a {
+  display: block;
+  padding: 10px 0px;
+  line-height: 1.5;
+  margin: 0px 10px;
+  text-transform: capitalize;
+  background:none;
+  font-weight:400;
+  border-radius:0;
+  border-top:none!important;
+}
+ul.dnnmega li.category a:hover { background:none;}
+ul.dnnmega li.category li a {
+    border: medium none;
+    font-weight: 400;
+    margin: 0px!important;
+    padding: 0px 0px 0px 10px;
+	position:relative;
+	text-transform: capitalize;
+}
+
+ul.dnnmega li.category li a span:before { content: "\f105"; font-family:FontAwesome; display:inline-block; font-size:12px; position:absolute; left:0; vertical-align:top;}
+ul.dnnmega li.category a span {
+    display: block;
+    color: #777;
+    padding: 0px;
+}
+ul.dnnmega li.category li a span { color:#777;}
+ul.dnnmega li.category a:hover span{color:#0ec6cc;}
+
+
+ul.dnnmega li.category li.leaf, ul.dnnmega li.category li.mmLast {
+    clear: left;
+    float: none;
+    position: static;
+    padding: 0px 0px 0px 15px;
+}
+
+ul.dnnmega li.category li.leaf a span{font-size:12px;line-height:26px;border:0;}
+
+ul.dnnmega img.mmIcon {max-height: 24px; margin-right: 5px; vertical-align: middle;}
+ul.dnnmega li.root > a > span img.mmIcon {height: 16px;}
+
+/*---selected---*/
+.dnnmega li.selected a {
+    color: #0ec6cc;
+    border-top: 3px solid #0ec6cc;
+}
+ 
+.dnnmega li.selected .subLevel li a{
+	border:none;
+}
+
+.dnnmega li.selected .subLevel li a{
+	border:none;
+}
+
+ul.dnnmega li.mmSelected li a span{ color:#888;}
+
+ul.dnnmega .megaborder li.mmSelected a span{ color:#0ec6cc;}
+ul.dnnmega .megaborder li.mmSelected li a span{ color:#888;}
+ul.dnnmega .megaborder li.mmSelected li a span:hover { color:#0ec6cc;}
+/*---Current---*/
+.dnnmega .root.mmBreadcrumb a  {
+    background-color: rgba(255, 255, 255, 0.06);
+    border-top: 4px solid #0ec6cc;
+}
+.dnnmega .root.mmBreadcrumb li a {
+  background: none;
+  border-top: none!important;
+  border-bottom:1px solid #e6e6e6;
+  border-radius:0;
+}
+.dnnmega .root.mmBreadcrumb li li a { border:none;}
+.dnnmega .root li a {
+  background: none;
+  border: none;
+  border-bottom:1px solid #eee;
+  border-radius:0;
+}
+.dnnmega .root li li a { border:none; }
+
+/*---isStuck---*/
+
+/*---lampback---*/
+.dnnmega li.lampback {
+    position: absolute;
+    top: 0px;
+    z-index: 8;
+    border-top: 3px solid #0ec6cc;
+    margin: 0px;
+}
+
+@media handheld, only screen and (max-width:1024px) {
+ul.dnnmega {
+  list-style: none;
+  margin: 0;
+  float: none;
+  padding: 0;
+  display: inline-block;
+}
+ul.dnnmega li.root .category a { line-height:inherit;}
+ul.dnnmega li .megaborder { left:0;}
+}
+
+/*dnnsoftware.ir*/
+.rtl ul.dnnmega {
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+
+
+.rtl ul.dnnmega ul {
+    padding: 5px 0;
+	margin:0;
+}
+
+/*WAM - removed z-index*/
+.rtl .dnnmega .breadcrumb { background:none;}
+.rtl ul.dnnmega li{float:right;list-style:none;position: relative;}
+
+.rtl ul.dnnmega li.root {
+    float: right;
+    list-style-type: none;
+    position: relative;
+    margin: 0;
+    padding: 0px;
+}
+
+.rtl ul.dnnmega li.root span{
+  padding:12px 20px;
+  display: block;
+}
+.rtl ul.dnnmega li.mmHasChild a span:after {
+  content: "\f0d7";
+  font-family: FontAwesome;
+  padding: 0 7px 0 0;
+  font-size: 12px;
+  font-weight: normal;
+}
+.rtl ul.dnnmega li.mmHasChild li a span:after { content:"";}
+
+.rtl ul.dnnmega li.root>span{color:White;}
+
+.rtl ul.dnnmega li.root a{
+    display: block;
+    color: #FFF;
+    line-height: 40px;
+    font-size: 14px;
+    /*font-weight: 700;*/
+    text-transform: uppercase;
+    font-family: inherit;
+    margin: 0px;
+    border-top: 4px solid transparent;
+}
+.rtl ul.dnnmega li.root a:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+    border-top: 4px solid #0ec6cc;
+}
+
+
+.rtl ul.dnnmega li.mmItemHover a { 
+    background-color: rgba(255, 255, 255, 0.06);
+    border-top: 4px solid #0ec6cc;
+}
+.rtl ul.dnnmega li.mmItemHover a:hover{ position:relative;z-index:1230; }
+
+.rtl ul.dnnmega li a {display:inline-block;}
+
+.rtl ul.dnnmega li:hover a, ul.dnnmega li a:hover { background-position: left bottom; }
+
+.rtl ul.dnnmega li .megaborder {
+    position: absolute;
+    left:auto;
+    right: -150px;
+    z-index: 1200;
+    float: right;
+    display: none;
+    background: #FFF none repeat scroll 0% 0%;
+    text-align: right;
+    min-height: 180px;
+    box-shadow: 0px 0px 1px #ccc;
+    border-bottom: 2px solid #0ec6cc;
+}
+
+.rtl ul.dnnmega li.mmLast .megaborder {
+    right:auto;
+    left: 0px;
+    
+}
+.rtl ul.dnnmega li.mmFirst .megaborder {
+    right:0;
+    left: auto;
+}
+.rtl ul.dnnmega li.child-2 .megaborder {
+    right:0;
+    left: auto;
+}
+.rtl ul.dnnmega li:nth-last-child(2) .megaborder {
+    right: auto;
+    left: -100px;
+}
+.rtl ul.dnnmega li:nth-last-child(3) .megaborder {
+    right: auto;
+    left: -150px;
+}
+
+.rtl ul.dnnmega .megaborder .M {
+    display: block;
+    border-top: 0px none;
+    border-bottom: 0px none;
+    min-height: 135px;
+    padding: 10px 10px 20px 0px;
+	margin:0;
+}
+
+
+/*--Sub nav heading style--*/
+.rtl ul.dnnmega .megaborder ul li.mmLast{background:none;}
+.rtl ul.dnnmega .megaborder ul li.mmRightColumn{background:none;}
+
+
+.rtl ul.dnnmega li.category {display:block;width:180px;float:right;}
+.rtl ul.dnnmega li.category a {
+  display: block;
+  padding: 10px 0px;
+  line-height: 1.5;
+  margin: 0px 10px;
+  text-transform: capitalize;
+  background:none;
+  font-weight:400;
+  border-radius:0;
+  border-top:none!important;
+}
+.rtl ul.dnnmega li.category a:hover { background:none;}
+.rtl ul.dnnmega li.category li a {
+    border: medium none;
+    font-weight: 400;
+    margin: 0px!important;
+    padding: 0px 10px 0px 0px;
+	position:relative;
+	text-transform: capitalize;
+}
+
+.rtl ul.dnnmega li.category li a span:before { content: "\f104"; font-family:FontAwesome; display:inline-block; font-size:12px; position:absolute; left:auto;right:0; vertical-align:top;}
+.rtl ul.dnnmega li.category a span {
+    display: block;
+    color: #777;
+    padding: 0px;
+}
+.rtl ul.dnnmega li.category li a span { color:#777;}
+.rtl ul.dnnmega li.category a:hover span{color:#0ec6cc;}
+
+
+.rtl ul.dnnmega li.category li.leaf, ul.dnnmega li.category li.mmLast {
+    clear: right;
+    float: none;
+    position: static;
+    padding: 0px 15px 0px 0px;
+}
+
+.rtl ul.dnnmega li.category li.leaf a span{font-size:12px;line-height:26px;border:0;}
+
+.rtl ul.dnnmega img.mmIcon {max-height: 24px; margin-right: 5px; vertical-align: middle;}
+.rtl ul.dnnmega li.root > a > span img.mmIcon {height: 16px;}
+
+/*---selected---*/
+.rtl .dnnmega li.selected a {
+    color: #0ec6cc;
+    border-top: 3px solid #0ec6cc;
+}
+ 
+.rtl .dnnmega li.selected .subLevel li a{
+	border:none;
+}
+
+.rtl .dnnmega li.selected .subLevel li a{
+	border:none;
+}
+
+.rtl ul.dnnmega li.mmSelected li a span{ color:#888;}
+
+.rtl ul.dnnmega .megaborder li.mmSelected a span{ color:#0ec6cc;}
+.rtl ul.dnnmega .megaborder li.mmSelected li a span{ color:#888;}
+.rtl ul.dnnmega .megaborder li.mmSelected li a span:hover { color:#0ec6cc;}
+/*---Current---*/
+.rtl .dnnmega .root.mmBreadcrumb a  {
+    background-color: rgba(255, 255, 255, 0.06);
+    border-top: 4px solid #0ec6cc;
+}
+.rtl .dnnmega .root.mmBreadcrumb li a {
+  background: none;
+  border-top: none!important;
+  border-bottom:1px solid #e6e6e6;
+  border-radius:0;
+}
+.rtl .dnnmega .root.mmBreadcrumb li li a { border:none;}
+.rtl .dnnmega .root li a {
+  background: none;
+  border: none;
+  border-bottom:1px solid #eee;
+  border-radius:0;
+}
+.dnnmega .root li li a { border:none; }
+
+/*---isStuck---*/
+
+/*---lampback---*/
+.rtl .dnnmega li.lampback {
+    position: absolute;
+    top: 0px;
+    z-index: 8;
+    border-top: 3px solid #0ec6cc;
+    margin: 0px;
+}
+
+@media handheld, only screen and (max-width:1024px) {
+.rtl ul.dnnmega {
+  list-style: none;
+  margin: 0;
+  float: none;
+  padding: 0;
+  display: inline-block;
+}
+.rtl ul.dnnmega li.root .category a { line-height:inherit;}
+.rtl ul.dnnmega li .megaborder { left:auto;right:0;}
+}
+
+
+
+
+
+
+
+

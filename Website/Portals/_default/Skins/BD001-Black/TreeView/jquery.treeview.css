@@ -1,0 +1,178 @@
+/*---MobileMenu---*/
+
+.MobileMenu .treeview, .MobileMenu .treeview ul { 
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display:block;
+	background:#1A1B1E;
+}
+
+.MobileMenu .treeview ul {
+	margin:0;
+	padding:0;
+}
+.MobileMenu .treeview .hitarea { cursor:pointer;}
+.MobileMenu .treeview .hitarea:before {
+  height: 40px;
+  width: 50px;
+  cursor: pointer;
+  position: absolute;
+  right: 0px;
+  line-height: 40px;
+  content: "\f107";
+  font-family: FontAwesome;
+  color: #555;
+  font-size: 18px;
+  text-align: left;
+  line-height: 45px;
+  padding: 0 0 0 10px;
+}
+.MobileMenu .treeview .expandable-hitarea:before { 	
+	content: "\f107";
+ }
+/* fix for IE6 */
+* html .hitarea {
+	display: inline;
+	float:none;
+}
+
+.MobileMenu .treeview li {
+    list-style-type: none;
+}
+.MobileMenu .treeview li a {
+    color: #ccc;
+    font-size: 14px;
+    font-weight: 600;
+	display:block;
+	padding:13px 20px;
+    border-bottom: 1px solid #303030;
+	text-transform:capitalize;
+}
+.MobileMenu .treeview ul li a {
+  font-weight: 400;
+  font-size: 13px;
+  padding-left: 30px;
+}
+.MobileMenu .treeview ul li li a {
+  padding-left: 45px;
+}
+.MobileMenu .treeview ul li li li a {
+  padding-left: 60px;
+}
+.MobileMenu .treeview a.selected {
+  color: #333;
+  background: #FFC600;
+}
+.MobileMenu .treeview a.selected:hover { color:#333;}
+
+.MobileMenu .treeview a:hover { color: #FFC600; cursor: pointer; }
+
+.MobileMenu .treeview li a.current{ background: #FFC600; color:#333;}
+.MobileMenu .treeview li li a.current { background:none; color:#ccc;}
+.MobileMenu .treeview li li a.current:hover { color: #FFC600;}
+.MobileMenu .treeview li.collapsable a{ background: #FFC600; color:#333;}
+.MobileMenu .treeview li li.collapsable a{ background:none; color:#ccc;}
+.MobileMenu .treeview li li.collapsable a:hover { color: #FFC600;}
+
+.MobileMenu .treeview li.collapsable ul a { background:inherit; color:#ccc;}
+.MobileMenu .treeview li.collapsable ul a:hover { color:#FFC600;}
+.MobileMenu .treeview li li a.selected { color:#FFC600;background: none;}
+.MobileMenu .treeview li li a.selected:hover { color:#FFC600;}
+
+/*---LeftMenu---*/
+.LeftMenu .treeview, .LeftMenu .treeview ul {
+    padding: 10px;
+    margin: 0px;
+    list-style: outside none none;
+    display: block;
+    position: relative;
+    border: 1px solid #444;
+}
+
+.LeftMenu .treeview ul {
+	margin:0;
+	padding:0;
+	border:none;
+}
+.LeftMenu .treeview .hitarea { cursor:pointer;}
+.LeftMenu .treeview .hitarea:before  {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    line-height: 40px;
+    content: "\f107";
+    font-family: FontAwesome;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 45px;
+}
+.LeftMenu .treeview li .hitarea:before { color:#555;}
+.LeftMenu .treeview .expandable-hitarea:before { 	
+	content: "\f105";
+	color: #333;
+ }
+/* fix for IE6 */
+* html .hitarea {
+	display: inline;
+	float:none;
+}
+
+.LeftMenu .treeview li {
+    list-style-type: none;
+}
+.LeftMenu .treeview li a {
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    padding: 13px 20px;
+    border-top: 1px solid #444;
+    color: #aaa;
+	text-transform: capitalize;
+	transition: background 0.7s ease 0s;
+}
+.LeftMenu .treeview li:first-child a { border-top:none;}
+
+.LeftMenu .treeview ul li a {
+  font-weight: 400;
+  font-size: 13px;
+  padding-left: 30px;
+  border: none;
+}
+.LeftMenu .treeview ul li li a {
+  padding-left: 45px;
+}
+.LeftMenu .treeview ul li li li a {
+  padding-left: 60px;
+}
+.LeftMenu .treeview a.selected {
+  color: #333;
+  background: #FFC600;
+}
+.LeftMenu .treeview a.selected:hover { color:#333;}
+
+.LeftMenu .treeview a:hover { color: #333; cursor: pointer; background:#FFC600; }
+
+.LeftMenu .treeview li a.current,
+.LeftMenu .treeview li.collapsable a{ background: #FFC600; color:#333;}
+.LeftMenu .treeview li.collapsable ul a {
+    background: inherit;
+    color: #aaa;
+}
+
+.LeftMenu .treeview li.collapsable ul a:hover { color:#FFC600; background:#111;}
+.LeftMenu .treeview li li a.selected { color:#FFC600;background: none;}
+
+
+
+@media handheld, only screen and (max-width:767px) {
+.LeftMenu { display:none;}
+
+}
+
+
+
+

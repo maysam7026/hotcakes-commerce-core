@@ -1,0 +1,381 @@
+/* Mega Menu Styles */
+ul.dnnmega {
+  list-style: none;
+  margin:0;
+  float: right;
+  padding: 0;
+}
+
+
+ul.dnnmega ul {
+    padding: 5px 0;
+	margin:0;
+}
+
+/*WAM - removed z-index*/
+.dnnmega .breadcrumb { background:none;}
+ul.dnnmega li{float:left;list-style: none none;position: relative;}
+
+ul.dnnmega li.root {
+    float: left;
+    list-style-type: none;
+    position: relative;
+    margin: 0 5px;
+    padding: 0px;
+}
+
+ul.dnnmega li.root span {
+    padding: 0px 10px;
+    display: block;
+}
+
+
+ul.dnnmega li.root>span{color:White;}
+
+ul.dnnmega li.root a  {
+  display: block;
+  color: #eee;
+  line-height:80px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-top: 3px solid transparent;
+}
+
+ul.dnnmega li.root a:hover{color: #FFC600;text-decoration:none; }
+
+
+body ul.dnnmega li.mmItemHover a,
+body ul.dnnmega li.mmItemHover a:hover{color: #FFC600; position:relative;z-index:1230;}
+
+ul.dnnmega li a {display:inline-block;}
+
+ul.dnnmega li:hover a, ul.dnnmega li a:hover { background-position: left bottom; }
+
+ul.dnnmega li .megaborder {
+    position: absolute;
+    left: -150px;
+    z-index: 1200;
+    float: left;
+    display: none;
+    background:#1A1B1E;
+	text-align:left;
+	min-height:180px;
+}
+
+
+ul.dnnmega li.mmLast .megaborder {
+    right: 0px;
+    left: inherit;
+}
+
+ul.dnnmega li:nth-last-child(2) .megaborder {
+    right: -100px;
+    left: inherit;
+}
+ul.dnnmega li:nth-last-child(3) .megaborder {
+    right: -150px;
+    left: inherit;
+}
+
+ul.dnnmega .megaborder .M {
+    display: block;
+    border-top: 0px none;
+    border-bottom: 0px none;
+    min-height: 135px;
+    padding: 10px 0 20px 10px;
+	margin:0;
+}
+
+
+/*--Sub nav heading style--*/
+ul.dnnmega .megaborder ul li.mmLast{background:none;}
+ul.dnnmega .megaborder ul li.mmRightColumn{background:none;}
+
+
+ul.dnnmega li.category {display:block;width:180px;float:left;}
+ul.dnnmega li.category a {
+    display: block;
+    padding: 10px 0px;
+    line-height: 1.5;
+    border-bottom: 1px solid #333;
+    margin: 0px 10px;
+	text-transform:capitalize;
+}
+ul.dnnmega li.category li a {
+    border: medium none;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px 0px 0px 10px;
+	position:relative;
+}
+
+ul.dnnmega li.category li a span:before { content: "\f105"; font-family:FontAwesome; display:inline-block; font-size:14px; position:absolute; left:0; vertical-align:top;}
+ul.dnnmega li.category a span {
+    display: block;
+    color: #777;
+    padding: 0px;
+}
+
+ul.dnnmega li.category a:hover span{color:#FFC600;}
+
+
+ul.dnnmega li.category li.leaf, ul.dnnmega li.category li.mmLast {
+    clear: left;
+    float: none;
+    position: static;
+    padding: 0px 0px 0px 15px;
+}
+
+ul.dnnmega li.category li.leaf a span{font-size:12px;line-height:26px;border:0;}
+
+ul.dnnmega img.mmIcon {max-height: 24px; margin-right: 5px; vertical-align: middle;}
+ul.dnnmega li.root > a > span img.mmIcon {height: 16px;}
+
+/*---selected---*/
+.dnnmega li.selected a {
+    color: #FFC600;
+    border-top: 3px solid #FFC600;
+}
+ 
+.dnnmega li.selected .subLevel li a{
+	border:none;
+}
+
+.dnnmega li.selected .subLevel li a{
+	border:none;
+}
+ul.dnnmega li.mmSelected a span{ color:#FFC600;}
+ul.dnnmega li.mmSelected li a span{ color:#888;}
+
+ul.dnnmega .megaborder li.mmSelected a span{ color:#FFC600;}
+ul.dnnmega .megaborder li.mmSelected li a span{ color:#888;}
+ul.dnnmega .megaborder li.mmSelected li a span:hover { color:#FFC600;}
+/*---Current---*/
+.dnnmega .root.mmBreadcrumb a {
+    color: #FFC600;
+    border-top: 3px solid #FFC600;
+}
+.dnnmega .root.mmBreadcrumb li a { border-top:none;}
+/*---isStuck---*/
+.isStuck ul.dnnmega li.root a {line-height: 50px; font-size:13px;}
+.isStuck .dnnmega .root.mmBreadcrumb li a { line-height:inherit;}
+.isStuck ul.dnnmega li.category a{ line-height:inherit;}
+.isStuck ul.dnnmega { margin:0;}
+
+/*---lampback---*/
+.dnnmega li.lampback {
+    position: absolute;
+    top: 0px;
+    z-index: 8;
+    border-top: 3px solid #FFC600;
+    margin: 0px;
+}
+
+@media handheld, only screen and (max-width:1024px) {
+ul.dnnmega {
+  list-style: none;
+  margin: 0;
+  float: none;
+  padding: 0;
+  display: inline-block;
+}
+ul.dnnmega li.root a { line-height:55px;}
+ul.dnnmega li.root .category a { line-height:inherit;}
+ul.dnnmega li .megaborder { left:0;}
+}
+
+/* dnnsoftware.ir */
+
+
+
+/* Mega Menu Styles */
+.rtl ul.dnnmega {
+  list-style: none;
+  margin:0;
+  float: left;
+  padding: 0;
+}
+
+
+.rtl ul.dnnmega ul {
+    padding: 5px 0;
+	margin:0;
+}
+
+/*WAM - removed z-index*/
+.rtl .dnnmega .breadcrumb { background:none;}
+.rtl ul.dnnmega li{float:right;list-style: none none;position: relative;}
+
+.rtl ul.dnnmega li.root {
+    float: right;
+    list-style-type: none;
+    position: relative;
+    margin: 0 5px;
+    padding: 0px;
+}
+
+.rtl ul.dnnmega li.root span {
+    padding: 0px 10px;
+    display: block;
+}
+
+
+.rtl ul.dnnmega li.root>span{color:White;}
+
+.rtl ul.dnnmega li.root a  {
+  display: block;
+  color: #eee;
+  line-height:80px;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  border-top: 3px solid transparent;
+}
+
+.rtl ul.dnnmega li.root a:hover{color: #FFC600;text-decoration:none; }
+
+
+.rtl body ul.dnnmega li.mmItemHover a,
+.rtl body ul.dnnmega li.mmItemHover a:hover{color: #FFC600; position:relative;z-index:1230;}
+
+.rtl ul.dnnmega li a {display:inline-block;}
+
+.rtl ul.dnnmega li:hover a, ul.dnnmega li a:hover { background-position: left bottom; }
+
+.rtl ul.dnnmega li .megaborder {
+    position: absolute;
+    left:auto;
+    right: -150px;
+    z-index: 1200;
+    float: right;
+    display: none;
+    background:#1A1B1E;
+	text-align:right;
+	min-height:180px;
+}
+
+
+.rtl ul.dnnmega li.mmLast .megaborder {
+    right:auto;
+    left: 0px;
+    
+}
+
+.rtl ul.dnnmega li:nth-last-child(2) .megaborder {
+    right:auto;
+    left: -100px;
+  
+}
+.rtl ul.dnnmega li:nth-last-child(3) .megaborder {
+    right:auto;
+    left: -150px;
+    
+}
+
+.rtl ul.dnnmega .megaborder .M {
+    display: block;
+    border-top: 0px none;
+    border-bottom: 0px none;
+    min-height: 135px;
+    padding: 10px 10px 20px 0px;
+	margin:0;
+}
+
+
+/*--Sub nav heading style--*/
+.rtl ul.dnnmega .megaborder ul li.mmLast{background:none;}
+.rtl ul.dnnmega .megaborder ul li.mmRightColumn{background:none;}
+
+
+.rtl ul.dnnmega li.category {display:block;width:180px;float:right;}
+.rtl ul.dnnmega li.category a {
+    display: block;
+    padding: 10px 0px;
+    line-height: 1.5;
+    border-bottom: 1px solid #333;
+    margin: 0px 10px;
+	text-transform:capitalize;
+}
+.rtl ul.dnnmega li.category li a {
+    border: medium none;
+    font-weight: normal;
+    margin: 0px;
+    padding: 0px 20px 0px 0;
+	position:relative;
+}
+
+.rtl ul.dnnmega li.category li a span:before { content: "\f104"; font-family:FontAwesome; display:inline-block; font-size:14px; position:absolute; left:auto;right:10px; vertical-align:top;}
+.rtl ul.dnnmega li.category a span {
+    display: block;
+    color: #777;
+    padding: 0px;
+}
+
+.rtl ul.dnnmega li.category a:hover span{color:#FFC600;}
+
+
+.rtl ul.dnnmega li.category li.leaf, .rtl ul.dnnmega li.category li.mmLast {
+    clear: left;
+    float: none;
+    position: static;
+    padding: 0px 0px 0px 15px;
+}
+
+.rtl ul.dnnmega li.category li.leaf a span{font-size:12px;line-height:26px;border:0;}
+
+.rtl ul.dnnmega img.mmIcon {max-height: 24px; margin-right: 5px; vertical-align: middle;}
+.rtl ul.dnnmega li.root > a > span img.mmIcon {height: 16px;}
+
+/*---selected---*/
+.rtl .dnnmega li.selected a {
+    color: #FFC600;
+    border-top: 3px solid #FFC600;
+}
+ 
+.rtl .dnnmega li.selected .subLevel li a{
+	border:none;
+}
+
+.rtl .dnnmega li.selected .subLevel li a{
+	border:none;
+}
+.rtl ul.dnnmega li.mmSelected a span{ color:#FFC600;}
+.rtl ul.dnnmega li.mmSelected li a span{ color:#888;}
+
+.rtl ul.dnnmega .megaborder li.mmSelected a span{ color:#FFC600;}
+.rtl ul.dnnmega .megaborder li.mmSelected li a span{ color:#888;}
+.rtl ul.dnnmega .megaborder li.mmSelected li a span:hover { color:#FFC600;}
+/*---Current---*/
+.rtl .dnnmega .root.mmBreadcrumb a {
+    color: #FFC600;
+    border-top: 3px solid #FFC600;
+}
+.rtl .dnnmega .root.mmBreadcrumb li a { border-top:none;}
+/*---isStuck---*/
+.rtl .isStuck ul.dnnmega li.root a {line-height: 50px; font-size:13px;}
+.rtl .isStuck .dnnmega .root.mmBreadcrumb li a { line-height:inherit;}
+.rtl .isStuck ul.dnnmega li.category a{ line-height:inherit;}
+.rtl .isStuck ul.dnnmega { margin:0;}
+
+/*---lampback---*/
+.rtl .dnnmega li.lampback {
+    position: absolute;
+    top: 0px;
+    z-index: 8;
+    border-top: 3px solid #FFC600;
+    margin: 0px;
+}
+
+@media handheld, only screen and (max-width:1024px) {
+.rtl ul.dnnmega {
+  list-style: none;
+  margin: 0;
+  float: none;
+  padding: 0;
+  display: inline-block;
+}
+.rtl ul.dnnmega li.root a { line-height:55px;}
+.rtl ul.dnnmega li.root .category a { line-height:inherit;}
+.rtl ul.dnnmega li .megaborder { left:0;}
+}

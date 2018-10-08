@@ -1,0 +1,330 @@
+
+
+.dnnMenu .breadcrumb {
+    padding: inherit;
+    margin: inherit;
+    list-style: outside none none;
+    background:none;
+    border-radius: 0;
+}
+.dnnMenu .topLevel {
+  position: relative;
+  margin:0;
+  padding: 0;
+  float: right;
+}
+.dnnMenu .topLevel li {
+    float: left;
+    list-style-type: none;
+    position: relative;
+    margin: 0 5px;
+	padding:0;
+}
+.dnnMenu .topLevel li a {
+    display: block;
+    color: #eee;
+    line-height: 80px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+	border-top: 3px solid transparent;
+}
+.dnnMenu .topLevel li a span {
+    padding: 0px 10px;
+    display: block;
+}
+.dnnMenu .topLevel li.hover a, .dnnMenu .topLevel li a:hover{
+	color:#FFC600;
+	text-decoration:none;
+	/*border-top:3px solid;*/
+}
+
+.dnnMenu .topLevel li a div {
+  display: block;
+  line-height: 33px;
+  margin: 0;
+  padding: 0;
+}
+
+
+.dnnMenu .subLevel {
+    position: absolute;
+    width: auto;
+    margin: 0px;
+    padding:7px 0;
+    z-index: 1210;
+    background:#1A1B1E;
+    display: none;
+    min-width: 200px;
+	text-align:left;
+}
+
+.dnnMenu .topLevel li.hover .subLevel{display:block;white-space:nowrap;}
+.dnnMenu .subLevel ul{margin:0;padding:0;position:relative;z-index:1200;}
+.dnnMenu .subLevel li {
+    float: none;
+    clear: both;
+    width: auto;
+	margin:0;
+}
+.dnnMenu .subLevel li:last-child a{
+    border-bottom: none;
+}
+.dnnMenu .subLevel li .subLevelRight li a { border-bottom: 1px solid #292929;}
+.dnnMenu .subLevel li li:last-child a { border-bottom:none;}
+.dnnMenu .subLevel li li:last-child li a { border-bottom: 1px solid #292929;}
+.dnnMenu .subLevel li li:last-child li:last-child a{ border-bottom:none;}
+.dnnMenu .subLevel li a {
+    text-transform: capitalize;
+    color: #AAA;
+    font-weight: 400;
+	position:relative;
+    border-bottom: 1px solid #292929;
+	margin: 0px 15px;
+}
+.dnnMenu .subLevel li.haschild a {
+  background:url(../images/haschild3.png) 100% 50% no-repeat;
+}
+.dnnMenu .subLevel li.haschild li a { background:none;}
+.dnnMenu .subLevel li.haschild li.haschild a { background:url(../images/haschild3.png) 100% 50% no-repeat;}
+.dnnMenu .subLevel li.haschild li.haschild li a { background:none;}
+.dnnMenu .subLevel li.haschild li.haschild li.haschild a { background:url(../images/haschild3.png) 100% 50% no-repeat;}
+.dnnMenu .subLevel li.haschild li.haschild li.haschild li a{ background:none;}
+.dnnMenu .subLevel li.item a div{ display:block; color: #888; }
+.dnnMenu .subLevel li.item a div img{ margin-right:.5em;width:16px;height:16px;vertical-align:middle;}
+.dnnMenu .subLevel li.item a div span {
+    padding: 3px 5px;
+}
+.dnnMenu .subLevel li.item a:hover div{color:#FFC600; }
+
+
+.dnnMenu .subLevelRight {
+    display: none;
+    position: absolute;
+    left: 100%;
+    width: auto;
+    top: -7px;
+    padding: 7px 0;
+    background:#1A1B1E;
+    min-width: 200px;
+}
+.dnnMenu .subLevel li.hover > .subLevelRight{display:block;}
+.dnnMenu .subLevelRight ul{display:block;}
+.dnnMenu .subLevelRight ul li{position:relative;}
+.dnnMenu .subLevelRight ul li a{display:block;}
+.dnnMenu .subLevelRight ul li a div{display:block;white-space:nowrap;}
+
+
+/*---selected---*/
+.dnnMenu .topLevel li.selected a {
+    color: #FFC600;
+    border-top: 3px solid #FFC600;
+}
+ 
+.dnnMenu .topLevel li.selected .subLevel li a{
+	border-top: none;
+}
+.dnnMenu .subLevel li.selected a div{ color: #FFC600;}
+.dnnMenu .subLevel li.selected li a div{ color: #888;}
+/*---Current---*/
+.dnnMenu .topLevel li.Current a {
+    color: #FFC600;
+    border-top: 3px solid #FFC600;
+}
+
+.dnnMenu .topLevel li.Current li a { border-top:none;}
+
+/*---isStuck---*/
+.isStuck .dnnMenu .topLevel li a {line-height: 50px; font-size:13px;}
+.isStuck .dnnMenu .topLevel li.Current a { color:#FFC600;}
+.isStuck .dnnMenu .topLevel { margin:0;}
+
+/*---lampback---*/
+.dnnMenu li.lampback {
+    position: absolute;
+    top: 0px;
+    z-index: 8;
+    border-top: 3px solid #FFC600;
+	margin:0;
+}
+
+
+@media handheld, only screen and (max-width:1024px) {
+.dnnMenu .topLevel {
+  display: inline-block;
+  float: none;
+}
+.dnnMenu .topLevel li a { line-height:55px;}
+}
+@media handheld, only screen and (max-width:767px) {
+.NavMenu { display:none;}
+
+}
+
+
+/* dnnsoftware.ir */
+.rtl .dnnMenu .breadcrumb {
+    padding: inherit;
+    margin: inherit;
+    list-style: outside none none;
+    background:none;
+    border-radius: 0;
+}
+.rtl .dnnMenu .topLevel {
+  position: relative;
+  margin:0;
+  padding: 0;
+  float: left;
+}
+.rtl .dnnMenu .topLevel li {
+    float: right;
+    list-style-type: none;
+    position: relative;
+    margin: 0 5px;
+	padding:0;
+}
+.rtl .dnnMenu .topLevel li a {
+    display: block;
+    color: #eee;
+    line-height: 80px;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+	border-top: 3px solid transparent;
+}
+.rtl .dnnMenu .topLevel li a span {
+    padding: 0px 10px;
+    display: block;
+}
+.rtl .dnnMenu .topLevel li.hover a,.rtl .dnnMenu .topLevel li a:hover{
+	color:#FFC600;
+	text-decoration:none;
+	/*border-top:3px solid;*/
+}
+
+.rtl .dnnMenu .topLevel li a div {
+  display: block;
+  line-height: 33px;
+  margin: 0;
+  padding: 0;
+}
+
+
+.rtl .dnnMenu .subLevel {
+    position: absolute;
+    width: auto;
+    margin: 0px;
+    padding:7px 0;
+    z-index: 1210;
+    background:#1A1B1E;
+    display: none;
+    min-width: 200px;
+	text-align:right;
+}
+
+.rtl .dnnMenu .topLevel li.hover .subLevel{display:block;white-space:nowrap;}
+.rtl .dnnMenu .subLevel ul{margin:0;padding:0;position:relative;z-index:1200;}
+.rtl .dnnMenu .subLevel li {
+    float: none;
+    clear: both;
+    width: auto;
+	margin:0;
+    text-align:right;
+}
+.rtl .dnnMenu .subLevel li:last-child a{
+    border-bottom: none;
+}
+.rtl .dnnMenu .subLevel li .subLevelRight li a { border-bottom: 1px solid #292929;}
+.rtl .dnnMenu .subLevel li li:last-child a { border-bottom:none;}
+.rtl .dnnMenu .subLevel li li:last-child li a { border-bottom: 1px solid #292929;}
+.rtl .dnnMenu .subLevel li li:last-child li:last-child a{ border-bottom:none;}
+.rtl .dnnMenu .subLevel li a {
+    text-transform: capitalize;
+    color: #AAA;
+    font-weight: normal;
+	position:relative;
+    border-bottom: 1px solid #292929;
+	margin: 0px 15px;
+}
+.rtl .dnnMenu .subLevel li.haschild a {
+  background:url(../images/haschild3.rtl.png) 0 50% no-repeat;
+}
+.rtl .dnnMenu .subLevel li.haschild li a { background:none;}
+.rtl .dnnMenu .subLevel li.haschild li.haschild a { background:url(../images/haschild3.rtl.png) 0 50% no-repeat;}
+.rtl .dnnMenu .subLevel li.haschild li.haschild li a { background:none;}
+.rtl .dnnMenu .subLevel li.haschild li.haschild li.haschild a { background:url(../images/haschild3.rtl.png) 0 50% no-repeat;}
+.rtl .dnnMenu .subLevel li.haschild li.haschild li.haschild li a{ background:none;}
+.rtl .dnnMenu .subLevel li.item a div{ display:block; color: #888; }
+.rtl .dnnMenu .subLevel li.item a div img{ margin-right:auto;margin-left:.5em;width:16px;height:16px;vertical-align:middle;}
+.rtl .dnnMenu .subLevel li.item a div span {
+    padding: 3px 5px;
+}
+.rtl .dnnMenu .subLevel li.item a:hover div{color:#FFC600; }
+
+
+.rtl .dnnMenu .subLevelRight {
+    display: none;
+    position: absolute;
+    left:auto;
+    right: 100%;
+    width: auto;
+    top: -7px;
+    padding: 7px 0;
+    background:#1A1B1E;
+    min-width: 200px;
+}
+.rtl .dnnMenu .subLevel li.hover > .subLevelRight{display:block;}
+.rtl .dnnMenu .subLevelRight ul{display:block;}
+.rtl .dnnMenu .subLevelRight ul li{position:relative;}
+.rtl .dnnMenu .subLevelRight ul li a{display:block;}
+.rtl .dnnMenu .subLevelRight ul li a div{display:block;white-space:nowrap;}
+
+
+/*---selected---*/
+.rtl .dnnMenu .topLevel li.selected a {
+    color: #FFC600;
+    border-top: 3px solid #FFC600;
+}
+ 
+.rtl .dnnMenu .topLevel li.selected .subLevel li a{
+	border-top: none;
+}
+.rtl .dnnMenu .subLevel li.selected a div{ color: #FFC600;}
+.rtl .dnnMenu .subLevel li.selected li a div{ color: #888;}
+/*---Current---*/
+.rtl .dnnMenu .topLevel li.Current a {
+    color: #FFC600;
+    border-top: 3px solid #FFC600;
+}
+
+.rtl .dnnMenu .topLevel li.Current li a { border-top:none;}
+
+/*---isStuck---*/
+.rtl .isStuck .dnnMenu .topLevel li a {line-height: 50px; font-size:13px;}
+.rtl .isStuck .dnnMenu .topLevel li.Current a { color:#FFC600;}
+.rtl .isStuck .dnnMenu .topLevel { margin:0;}
+
+/*---lampback---*/
+.rtl .dnnMenu li.lampback {
+    position: absolute;
+    top: 0px;
+    z-index: 8;
+    border-top: 3px solid #FFC600;
+	margin:0;
+}
+
+
+@media handheld, only screen and (max-width:1024px) {
+.rtl .dnnMenu .topLevel {
+  display: inline-block;
+  float: none;
+}
+.rtl .dnnMenu .topLevel li a { line-height:55px;}
+}
+@media handheld, only screen and (max-width:767px) {
+.rtl .NavMenu { display:none;}
+
+}
+
+
+

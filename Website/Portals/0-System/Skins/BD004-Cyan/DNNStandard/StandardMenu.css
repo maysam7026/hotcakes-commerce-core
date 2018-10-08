@@ -1,0 +1,439 @@
+
+
+.dnnMenu .breadcrumb {
+    padding: inherit;
+    margin: inherit;
+    list-style: outside none none;
+    background:none;
+    border-radius: 0;
+}
+.dnnMenu .topLevel {
+  position: relative;
+  margin:0;
+  padding: 0;
+}
+.dnnMenu .topLevel li {
+    float: left;
+    list-style-type: none;
+    position: relative;
+    margin: 0;
+	padding:0;
+}
+.dnnMenu .topLevel li a {
+    display: block;
+    color: #FFF;
+    line-height: 40px;
+    font-size: 14px;
+    /*font-weight: 700;*/
+    text-transform: uppercase;
+    font-family: open sans;
+    margin: 0px;
+    border-top: 4px solid transparent;
+}
+.dnnMenu .topLevel li.haschild a span:after {
+  content: "\f0d7";
+  font-family: FontAwesome;
+  padding: 0 0 0 7px;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+
+.dnnMenu .topLevel li a span {
+    padding:12px 20px;
+    display: block;
+}
+.dnnMenu .topLevel li.hover a, 
+.dnnMenu .topLevel li a:hover{
+	background: #363636;
+	border-top: 4px solid #0ec6cc;
+}
+.dnnMenu .topLevel li.hover li a
+{
+	background:none;
+}
+
+.dnnMenu .topLevel li a div {
+  display: block;
+  line-height: 33px;
+  margin: 0;
+  padding: 0;
+}
+
+
+.dnnMenu .subLevel {
+    position: absolute;
+    width: auto;
+    margin: 0px;
+    padding:0;
+    z-index: 1210;
+    background:#fff;
+    display: none;
+    min-width: 200px;
+	text-align:left;
+	box-shadow:0 0 1px #ccc;
+	
+}
+
+.dnnMenu .topLevel li.hover .subLevel{display:block; }
+.dnnMenu .subLevel ul{margin:0;padding:0;position:relative;z-index:1200;}
+.dnnMenu .subLevel li {
+    float: none;
+    clear: both;
+    width: auto;
+	margin:0;
+}
+.dnnMenu .subLevel li:last-child a{
+    border-bottom: none;
+}
+.dnnMenu .subLevel li .subLevelRight li a { /*border-bottom: 1px solid #444;*/}
+.dnnMenu .subLevel li li:last-child a { border-bottom:none;}
+.dnnMenu .subLevel li li:last-child li a { /*border-bottom: 1px solid #444;*/}
+.dnnMenu .subLevel li li:last-child li:last-child a{ border-bottom:none;}
+.dnnMenu .subLevel li a {
+    text-transform: capitalize;
+    color: #AAA;
+    font-weight: 400;
+	position:relative;
+  /*  border-bottom: 1px solid #e6e6e6;
+	margin: 0px 15px;*/
+	border-top: none !important;
+	font-size: 13px;
+    transition: none;
+}
+
+/*submenu Level2*/
+.dnnMenu .topLevel li.haschild li a span:after { content:"";}
+.dnnMenu .topLevel li.haschild li.haschild a span:after{
+  content: "\f0da";
+  font-family: FontAwesome;
+  padding:0;
+  font-size: 12px;
+  font-weight: normal;
+  position:absolute;
+  right:10px;
+}
+
+/*submenu Level3*/
+.dnnMenu .topLevel li.haschild li.haschild li a span:after { content:"";}
+.dnnMenu .topLevel li.haschild li.haschild li.haschild a span:after{
+  content: "\f0da";
+  font-family: FontAwesome;
+  padding:0;
+  font-size: 12px;
+  font-weight: normal;
+  position:absolute;
+  right:10px;
+}
+
+/*submenu Level4*/
+.dnnMenu .topLevel li.haschild li.haschild li.haschild li a span:after { content:"";}
+
+
+.dnnMenu .subLevel li.haschild li a { background:none;}
+
+.dnnMenu .subLevel li.item a div{ display:block; color: #444; }
+.dnnMenu .subLevel li.item a div img{ margin-right:.5em;width:16px;height:16px;vertical-align:middle;}
+.dnnMenu .subLevel li.item a div span {
+    padding: 3px 20px;
+	  position: relative;
+}
+.dnnMenu .subLevel li.item a:hover { background-color:#0ec6cc; }
+.dnnMenu .subLevel li.item a:hover div { color:#fff;}
+
+.dnnMenu .subLevelRight {
+    display: none;
+    position: absolute;
+    left: 200px;
+    width: auto;
+    top: 0;
+    padding:0;
+    background: #fff;
+    min-width: 200px;
+	box-shadow:0 0 1px #ccc;
+	
+}
+.dnnMenu .subLevel li.hover > .subLevelRight{display:block;}
+.dnnMenu .subLevelRight ul{display:block;}
+.dnnMenu .subLevelRight ul li{position:relative;}
+.dnnMenu .subLevelRight ul li a{display:block;}
+.dnnMenu .subLevelRight ul li a div{display:block; }
+
+
+/*---selected---*/
+.dnnMenu .topLevel li.selected a {
+
+}
+ 
+.dnnMenu .topLevel li.selected .subLevel li a{
+	border-top: none;
+}
+.dnnMenu .subLevel li.selected a div{ color: #0ec6cc;}
+.dnnMenu .subLevel li.selected li a div{ color: #888;}
+/*---Current---*/
+.dnnMenu .topLevel li.Current a {
+    background-color: rgba(255,255,255,0.06);
+    border-top: 4px solid #0ec6cc;
+}
+
+.dnnMenu .topLevel li.Current li a { border-top:none;}
+
+/*---isStuck---*/
+
+/*---lampback---*/
+.dnnMenu li.lampback {
+    position: absolute;
+    top: 0px;
+    z-index: 8;
+    border-top: 3px solid #0ec6cc;
+	margin:0;
+}
+@media handheld, only screen and (max-width:1100px) {
+.dnnMenu .topLevel li a span {
+  padding: 12px 15px;
+}
+}
+@media handheld, only screen and (max-width:1024px) {
+.dnnMenu .topLevel {
+  display: inline-block;
+  float: none;
+  vertical-align:middle;
+}
+}
+@media handheld, only screen and (max-width:800px) {
+.dnnMenu .topLevel li a { font-size:13px;}
+.dnnMenu .topLevel li a span {
+  padding: 10px 12px;
+}
+}
+
+@media handheld, only screen and (max-width:767px) {
+.NavMenu { display:none;}
+
+}
+
+/* dnnsoftware.ir */
+
+
+
+.rtl .dnnMenu .breadcrumb {
+    padding: inherit;
+    margin: inherit;
+    list-style: outside none none;
+    background:none;
+    border-radius: 0;
+}
+.rtl .dnnMenu .topLevel {
+  position: relative;
+  margin:0;
+  padding: 0;
+}
+.rtl .dnnMenu .topLevel li {
+    float: right;
+    list-style-type: none;
+    position: relative;
+    margin: 0;
+	padding:0;
+}
+.rtl .dnnMenu .topLevel li a {
+    display: block;
+    color: #FFF;
+    line-height: 40px;
+    font-size: 14px;
+    /*font-weight: 700;*/
+    text-transform: uppercase;
+    margin: 0px;
+    border-top: 4px solid transparent;
+    font-family:inherit;
+}
+.rtl .dnnMenu .topLevel li.haschild a span:after {
+  content: "\f0d7";
+  font-family: FontAwesome;
+  padding: 0 7px 0 0;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+
+.rtl .dnnMenu .topLevel li a span {
+    padding:12px 20px;
+    display: block;
+}
+.rtl .dnnMenu .topLevel li.hover a, 
+.rtl .dnnMenu .topLevel li a:hover{
+	background: #363636;
+	border-top: 4px solid #0ec6cc;
+}
+.rtl .dnnMenu .topLevel li.hover li a
+{
+	background:none;
+}
+
+.rtl .dnnMenu .topLevel li a div {
+  display: block;
+  line-height: 33px;
+  margin: 0;
+  padding: 0;
+}
+
+
+.rtl .dnnMenu .subLevel {
+    position: absolute;
+    width: auto;
+    margin: 0px;
+    padding:0;
+    z-index: 1210;
+    background:#fff;
+    display: none;
+    min-width: 200px;
+	text-align:right;
+	box-shadow:0 0 1px #ccc;
+	
+}
+
+.rtl .dnnMenu .topLevel li.hover .subLevel{display:block; }
+.rtl .dnnMenu .subLevel ul{margin:0;padding:0;position:relative;z-index:1200;}
+.rtl .dnnMenu .subLevel li {
+    float: none;
+    clear: both;
+    width: auto;
+	margin:0;
+}
+.rtl .dnnMenu .subLevel li:last-child a{
+    border-bottom: none;
+}
+.rtl .dnnMenu .subLevel li .subLevelRight li a { /*border-bottom: 1px solid #444;*/}
+.rtl .dnnMenu .subLevel li li:last-child a { border-bottom:none;}
+.rtl .dnnMenu .subLevel li li:last-child li a { /*border-bottom: 1px solid #444;*/}
+.rtl .dnnMenu .subLevel li li:last-child li:last-child a{ border-bottom:none;}
+.rtl .dnnMenu .subLevel li a {
+    text-transform: capitalize;
+    color: #AAA;
+    font-weight: 400;
+	position:relative;
+  /*  border-bottom: 1px solid #e6e6e6;
+	margin: 0px 15px;*/
+	border-top: none !important;
+	font-size: 13px;
+    transition: none;
+}
+
+/*submenu Level2*/
+.rtl .dnnMenu .topLevel li.haschild li a span:after { content:"";}
+.rtl .dnnMenu .topLevel li.haschild li.haschild a span:after{
+  content: "\f0d9";
+  font-family: FontAwesome;
+  padding:0;
+  font-size: 12px;
+  font-weight: normal;
+  position:absolute;
+  right:auto;
+  left:10px;
+}
+
+/*submenu Level3*/
+.rtl .dnnMenu .topLevel li.haschild li.haschild li a span:after { content:"";}
+.rtl .dnnMenu .topLevel li.haschild li.haschild li.haschild a span:after{
+  content: "\f0d9";
+  font-family: FontAwesome;
+  padding:0;
+  font-size: 12px;
+  font-weight: normal;
+  position:absolute;
+  right:auto;
+  left:10px;
+}
+
+/*submenu Level4*/
+.rtl .dnnMenu .topLevel li.haschild li.haschild li.haschild li a span:after { content:"";}
+
+
+.rtl .dnnMenu .subLevel li.haschild li a { background:none;}
+
+.rtl .dnnMenu .subLevel li.item a div{ display:block; color: #444; }
+.rtl .dnnMenu .subLevel li.item a div img{ margin-right:auto;margin-left:.5em;width:16px;height:16px;vertical-align:middle;}
+.rtl .dnnMenu .subLevel li.item a div span {
+    padding: 3px 20px;
+	  position: relative;
+}
+.rtl .dnnMenu .subLevel li.item a:hover { background-color:#0ec6cc; }
+.rtl .dnnMenu .subLevel li.item a:hover div { color:#fff;}
+
+.rtl .dnnMenu .subLevelRight {
+    display: none;
+    position: absolute;
+    left:auto;
+    right: 200px;
+    width: auto;
+    top: 0;
+    padding:0;
+    background: #fff;
+    min-width: 200px;
+	box-shadow:0 0 1px #ccc;
+	
+}
+.rtl .dnnMenu .subLevel li.hover > .subLevelRight{display:block;}
+.rtl .dnnMenu .subLevelRight ul{display:block;}
+.rtl .dnnMenu .subLevelRight ul li{position:relative;}
+.rtl .dnnMenu .subLevelRight ul li a{display:block;}
+.rtl .dnnMenu .subLevelRight ul li a div{display:block; }
+
+
+/*---selected---*/
+.rtl .dnnMenu .topLevel li.selected a {
+
+}
+ 
+.rtl .dnnMenu .topLevel li.selected .subLevel li a{
+	border-top: none;
+}
+.rtl .dnnMenu .subLevel li.selected a div{ color: #0ec6cc;}
+.rtl .dnnMenu .subLevel li.selected li a div{ color: #888;}
+/*---Current---*/
+.rtl .dnnMenu .topLevel li.Current a {
+    background-color: rgba(255,255,255,0.06);
+    border-top: 4px solid #0ec6cc;
+}
+
+.rtl .dnnMenu .topLevel li.Current li a { border-top:none;}
+
+/*---isStuck---*/
+
+/*---lampback---*/
+.rtl .dnnMenu li.lampback {
+    position: absolute;
+    top: 0px;
+    z-index: 8;
+    border-top: 3px solid #0ec6cc;
+	margin:0;
+}
+@media handheld, only screen and (max-width:1100px) {
+.rtl .dnnMenu .topLevel li a span {
+  padding: 12px 15px;
+}
+}
+@media handheld, only screen and (max-width:1024px) {
+.rtl .dnnMenu .topLevel {
+  display: inline-block;
+  float: none;
+  vertical-align:middle;
+}
+}
+@media handheld, only screen and (max-width:800px) {
+.rtl .dnnMenu .topLevel li a { font-size:13px;}
+.rtl .dnnMenu .topLevel li a span {
+  padding: 10px 12px;
+}
+}
+
+@media handheld, only screen and (max-width:767px) {
+.rtl .NavMenu { display:none;}
+
+}
+
+
+
+
+
+
+
