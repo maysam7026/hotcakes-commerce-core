@@ -1139,6 +1139,15 @@
     <Content Include="Portals\_default\HotcakesViews\Persian\Views\ZarinpalCheckout\App_LocalResources\Controller.resx" />
     <Content Include="Portals\_default\HotcakesViews\Persian\Views\ZarinpalCheckout\App_LocalResources\Index.cshtml.resx" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Portals\_default\HotcakesViews\Persian\Views\Category\App_LocalResources\_DrillDownFilter.fa-ir.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Portals\_default\HotcakesViews\Persian\Views\Category\App_LocalResources\_DrillDownFilter.cshtml.fa-ir.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Portals\_default\HotcakesViews\Persian\Views\Category\App_LocalResources\_DrillDownFilter.fa-ir.cshtml.resx" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -18,7 +18,7 @@
             {
                 <div class="dnnFormItem">
                     <label class="dnnLabel" for="qty">@Localization.GetString("Quantity")</label>
-                    <input type="text" id="qty" name="qty" value="@Model.InitialQuantity" class="hc-input-mini"/>
+                    <input type="number" id="qty" name="qty" value="@Model.InitialQuantity" class="hc-input-mini"/>
                 </div>
             }
             if (!Model.LocalProduct.IsBundle)

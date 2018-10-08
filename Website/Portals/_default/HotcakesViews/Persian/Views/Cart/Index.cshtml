@@ -69,8 +69,8 @@
                         {
                             using (Html.BeginHccRouteForm(HccRouteNames.CartUpdateItem))
                             {
-                                <input type="text" name="lineitemquantity" value="@item.Item.Quantity" />
-                                <input type="submit" class="dnnSecondaryAction" value="@Localization.GetString("UpdateItem")" />
+                                <input type="number" class="form-control text-center" name="lineitemquantity" value="@item.Item.Quantity" />
+                                <input type="submit" class="dnnSecondaryAction " style="width:100%" value="@Localization.GetString("UpdateItem")" />
                                 <input type="hidden" name="lineitemid" value="@item.Item.Id" />
                             }
                         }
