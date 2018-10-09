@@ -30,6 +30,7 @@
     <IISExpressUseClassicPipelineMode />
     <TargetFrameworkProfile />
     <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -4011,6 +4012,7 @@
     <Content Include="Providers\DataProviders\SqlDataProvider\01.09.01.SqlDataProvider" />
     <Content Include="Providers\DataProviders\SqlDataProvider\02.00.01.SqlDataProvider" />
     <Content Include="Providers\DataProviders\SqlDataProvider\03.00.00.SqlDataProvider" />
+    <Content Include="dnn9.rar" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
